@@ -1,18 +1,4 @@
-"""
-==========================================================
- Gaming vs Academic Performance — Full ML Pipeline
- Dataset: 8,000 students
-==========================================================
 
-HOW TO RUN:
-  python gaming_grade_predictor.py
-
-HOW TO MAKE A PREDICTION:
-  At the bottom of this file, edit the `my_student` dictionary
-  with your values, then run the script. The predicted grade
-  will be printed at the end.
-==========================================================
-"""
 
 # ── 1. IMPORTS ──────────────────────────────────────────
 import pandas as pd
@@ -329,29 +315,3 @@ print(f"  │  Predicted Grade  :  {predicted:5.1f}/100  │")
 print(f"  │  Letter Grade     :  {letter_grade(predicted):<10}  │")
 print(f"  └────────────────────────────────┘")
 
-print("""
-──────────────────────────────────────────────────
-  HOW TO PREDICT FOR A DIFFERENT STUDENT
-──────────────────────────────────────────────────
-  1. Open this file in any editor
-  2. Find the `my_student` dictionary (Step 7 above)
-  3. Change the values to match the new student
-  4. Run:  python gaming_grade_predictor.py
-     → The predicted grade prints at the end
-
-  Or call predict_grade() in your own script:
-  ─────────────────────────────────────────────
-  from gaming_grade_predictor import predict_grade
-
-  new_student = {
-      'age': 21, 'gender': 'Female',
-      'gaming_hours': 2.0, 'study_hours': 8.0,
-      'sleep_hours': 8.0, 'attendance': 90.0,
-      'gaming_genre': 'Casual', 'social_activity': 4.0,
-      'device_usage': 7.0, 'reaction_time_ms': 220.0,
-      'addiction_score': 4.0, 'stress_level': 'High'
-  }
-  grade = predict_grade(new_student)
-  print(f"Grade: {grade:.1f}")
-──────────────────────────────────────────────────
-""")
