@@ -252,18 +252,18 @@ print("=" * 55)
 
 # ─── Edit these values for any new student ───────────────
 my_student = {
-    'age'              : 20,        # 16–24
-    'gender'           : 'Male',    # 'Male', 'Female', 'Other'
-    'gaming_hours'     : 4.0,       # hours/day
-    'study_hours'      : 6.0,       # hours/day
-    'sleep_hours'      : 7.5,       # hours/night
-    'attendance'       : 85.0,      # percentage 0–100
-    'gaming_genre'     : 'FPS',     # 'FPS', 'RPG', 'Casual'
-    'social_activity'  : 3.0,       # 0–10
-    'device_usage'     : 8.0,       # hours/day on devices
-    'reaction_time_ms' : 260.0,     # milliseconds (lower = faster)
-    'addiction_score'  : 9.0,       # 0–23
-    'stress_level'     : 'Medium',  # 'Low', 'Medium', 'High'
+    'age': int(input("Age: ")),
+    'gender': input("Gender (Male/Female/Other): "),
+    'gaming_hours': float(input("Gaming hours per day: ")),
+    'study_hours': float(input("Study hours per day: ")),
+    'sleep_hours': float(input("Sleep hours: ")),
+    'attendance': float(input("Attendance (%): ")),
+    'gaming_genre': input("Gaming genre (FPS/RPG/Casual): "),
+    'social_activity': float(input("Social activity (0-10): ")),
+    'device_usage': float(input("Device usage (hours): ")),
+    'reaction_time_ms': float(input("Reaction time (ms): ")),
+    'addiction_score': float(input("Addiction score (0-23): ")),
+    'stress_level': input("Stress level (Low/Medium/High): ")
 }
 # ─────────────────────────────────────────────────────────
 
